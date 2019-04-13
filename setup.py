@@ -24,23 +24,11 @@ setup(name='rdpy',
 			'rdpy.protocol.rdp.nla',
 			'rdpy.protocol.rdp.t125',
 			'rdpy.protocol.rfb', 
-			'rdpy.ui'
-		],
-	ext_modules=[Extension('rle', ['ext/rle.c'])],
-	scripts = [
-			'bin/rdpy-rdpclient.py',
-			'bin/rdpy-rdphoneypot.py',
-			'bin/rdpy-rdpmitm.py',
-			'bin/rdpy-rdpscreenshot.py', 
-			'bin/rdpy-rssplayer.py',
-			'bin/rdpy-vncclient.py', 
-			'bin/rdpy-vncscreenshot.py'
 		],
 	install_requires=[
 			'twisted',
           	'pyopenssl',
           	'service_identity',
-          	'qt4reactor',
           	'rsa',
           	'pyasn1'
 	  	],
